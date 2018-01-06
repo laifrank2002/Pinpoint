@@ -32,15 +32,17 @@ $(document).on('keyup', async function(e) {
     const {value: password} = await swal({
       title: 'Please enter your unique pin',
       input: 'text',
-      inputPlaceholder: 'Enter your x digit pin',
+      inputPlaceholder: 'Enter your 4 digit pin',
       showCancelButton: true,
       inputValidator: (value) => {
         return !value && 'You need to write something!'
       }
-    })
+    });
 
     if (password == '1234') {
-      swal({type: 'success', title: "You've enabled the online map!"})
+      swal({type: 'success', title: "You've enabled the online map!"});
+    } else {
+      swal({type: 'error', title: "Incorrect password"});
     }
     return array = [];
   }
