@@ -22,3 +22,12 @@ body {
 a {
   text-decoration: none;
 }
+
+.main section.page3 {
+  color: white;
+  background-image: url("bg/scenic.jpg") !important;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
