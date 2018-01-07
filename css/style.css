@@ -46,7 +46,7 @@ a {text-decoration: none;}
 .main section.page1 {
   background:rgb(230, 217, 200);
 }
-.main section.page1 .page_container > .text_container {
+.main section.page1 .page_container .text_container {
   width: 600px;
 }
 .main section.page1 h1 {
@@ -54,6 +54,9 @@ a {text-decoration: none;}
   padding: 0;
   margin-bottom: 15px;
   color: black;
+}
+.main section.page1 .marker {
+  color: #FE7569;
 }
 
 /*Section 2*/
