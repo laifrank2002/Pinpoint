@@ -51,12 +51,30 @@ a {text-decoration: none;}
 }
 .main section.page1 h1 {
   text-align: left;
-  padding: 0;
-  margin-bottom: 15px;
   color: black;
 }
 .main section.page1 .marker {
   color: #FE7569;
+}
+
+.marker_ring {
+  z-index: -1;
+  border: 3px solid #999;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  height: 20px;
+  width: 80px;
+  position: absolute;
+  left: 82px;
+  top: 150px;
+  -webkit-animation: pulsate 1.5s ease-out;
+  -webkit-animation-iteration-count: infinite; 
+  opacity: 0.0
+}
+@-webkit-keyframes pulsate {
+  0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(1.4, 1.4); opacity: 0.0;}
 }
 
 /*Section 2*/
