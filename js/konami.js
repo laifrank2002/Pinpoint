@@ -41,6 +41,7 @@ $(document).on('keyup', async function(e) {
 
     if (password == '1234') {
       swal({type: 'success', title: "You've enabled the online map!"});
+      $(".main").moveTo(3);
     } else {
       swal({type: 'error', title: "Incorrect password"});
     }

@@ -11,26 +11,31 @@
 	<meta content="" property="og:image" />
 	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
 	<meta name="author" content="Pinpoint Adventures IT Dept">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <!-- Styles -->
+  <link href='css/onepage-scroll.css' rel='stylesheet'>
+  <link href='css/style.css' rel='stylesheet'>
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
+  <!-- Bootstrap core -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="js/jquery.onepage-scroll.min.js"></script>
-  <link href='css/onepage-scroll.css' rel='stylesheet'>
-  <link href='css/main.css' rel='stylesheet'>
-  <link href='css/style.css' rel='stylesheet'>
 
   <script src="js/konami.js"></script>
+
+  <!-- SweetAlert -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.9/sweetalert2.all.min.js"></script>
-  <!-- Bootstrap core -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
 
 	<script>
 	  $(document).ready(function(){
       $(".main").onepage_scroll({
         sectionContainer: "section",
-        responsiveFallback: 600,
+        responsiveFallback: 500,
         loop: true
       });
 		});
@@ -42,8 +47,10 @@
 	    
       <section class="page1">
         <div class="page_container">
-          <h1>Pinpoint Adventures</h1>
-          <h2>Pinpoint Adventures is an all new apparel line that...</h2>
+          <div class="text_container">
+            <h1 class="display-3 text-center">Pinpoint Apparel</h1>
+            <h2 class="text-center">Pinpoint Apparel is an all new apparel company that's helping Torontonian youth discover their city's hidden gems.</h2>
+          </div>
   	    </div>
       </section>
 	    
@@ -62,5 +69,8 @@
       </section>
     </div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 </body>
 </html>
