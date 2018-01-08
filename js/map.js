@@ -6,10 +6,8 @@ if (enableMap === null) {
 } else {
   enableMap = JSON.parse(enableMap);
 }
-console.log(enableMap);
 
 if (enableMap) {
-  console.log('Map added');
   addMap();
 }
 initPage();
@@ -57,11 +55,11 @@ $(document).on('keyup', async function(e) {
     });
     if (isValid(password)) {
       localStorage.enableMap = true;
-      addMap();
-      swal({type: 'success', title: "You've enabled the online map!"});
-      location.reload();
+      swal({type: 'success', title: "You've enabled the online map!", text: "The page will now reload."}).then((result) => {
+        location.reload();
+      });
     } else {
-      swal({type: 'error', title: "Sorry, you have entered an incorrect pin"});
+      swal({type: 'error', title: "Sorry, you have entered an invalid pin"});
     }
     return array = [];
   } else if (enableMap && sameArrays(userInputs, konami)) {
