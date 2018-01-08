@@ -67,7 +67,8 @@ function addMap() {
     $(document).ready(function(){
       $("#map").removeClass("d-none");
       initMap();
-      $("#map").wrap('<section class="page4"><div class="page_container"></div></section>');
+      $("#map").wrap('<section class="page4"><div class="map_container"></div></section>');
+      $(".page4").insertBefore(".page5");
       $(".main").onepage_scroll({
         sectionContainer: "section",
         responsiveFallback: 500,
@@ -86,6 +87,7 @@ function initMap() {
   });
   var marker = new google.maps.Marker({
     map: map,
+    title: 'Scarborough Town Centre',
     position: stc
   });
 }
