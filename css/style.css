@@ -44,14 +44,6 @@ a {text-decoration: none;}
 
 /*Section 1*/
 .main section.page1 {
-  background:rgb(230, 217, 200);
-}
-.main section.page1 .page_container .text_container {
-  width: 600px;
-}
-.main section.page1 h1 {
-  text-align: left;
-  color: black;
 }
 .main section.page1 .marker {
   color: #FE7569;
@@ -85,7 +77,4 @@ a {text-decoration: none;}
   color: white;
   background-image: url("bg/scenic.jpg") !important;
   height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }

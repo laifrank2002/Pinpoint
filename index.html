@@ -30,6 +30,10 @@
 
   <script src="js/konami.js"></script>
 
+  <!-- 3D Effect -->
+  <link href="css/perspectiveRules.css" rel="stylesheet" />
+  <script src="js/jquery.logosDistort.min.js"></script>
+
   <!-- SweetAlert -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.9/sweetalert2.all.min.js"></script>
 
@@ -42,27 +46,39 @@
         loop: true
       });
 		});
+    $(document).ready(function(){
+      var options = {
+        effectWeight: 1,
+        outerBuffer: 1.08,
+        elementDepth: 200,
+        perspectiveMulti: 0.5,
+        enableSmoothing: true
+        };
+      $("#distort").logosDistort(options);
+    });
 	</script>
 </head>
 <body>
   <div class="wrapper">
 	  <div class="main">
-	    
-      <section class="page1">
-        <div class="page_container">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="text_container animated fadeInLeft col-sm-9">
-                <h1 class="display-3 text-center mb-3">Pinpoint Apparel</h1>
-                <h2 class="text-center">Pinpoint Apparel is an all new apparel company that's helping Torontonian youth discover their city's hidden gems.</h2>
-              </div>
-              <div class="marker animated slideInDown col-sm-3 my-auto">
-                <i class="fas fa-map-marker-alt fa-10x ml-5"></i>
-                <div class="marker_ring"></div>
+
+      <section id="distort" class="page1">
+        <img src="img/toronto_blur.jpg">
+          <div class="page_container">
+            <div class="container">
+              <div class="row">
+                <div class="text_container animated fadeInLeft col-sm-8">
+                  <h1 class="display-3 text-center mb-3">Pinpoint Apparel</h1>
+                  <h3 class="text-center">Pinpoint Apparel is an all new apparel company that is helping Torontonian youth discover their city's hidden gems.</h3>
+                </div>
+                <div class="marker animated slideInDown col-sm-4 my-auto">
+                  <i class="fas fa-map-marker-alt fa-10x ml-5"></i>
+                  <div class="marker_ring"></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        
       </section>
 	    
 	    <section class="page2">
