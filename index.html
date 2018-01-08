@@ -39,17 +39,9 @@
   <!-- Google Maps -->
   <!-- API Key: AIzaSyCjCAtnFRjxQp16q7glc6rEl8XQHtTmqnU -->
   <script src="js/map.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCAtnFRjxQp16q7glc6rEl8XQHtTmqnU&callback=initMap"></script>
 
 
 	<script>
-	  $(document).ready(function(){
-      $(".main").onepage_scroll({
-        sectionContainer: "section",
-        responsiveFallback: 500,
-        loop: true
-      });
-		});
     $(document).ready(function(){
       var options = {
         effectWeight: 1,
@@ -106,7 +98,9 @@
         </div>
       </section>
 
-      <div id="map" class="d-none"><div>
+      <div class="map_container">
+        <div id="map"></div>
+      </div>
 
     </div>
   </div>

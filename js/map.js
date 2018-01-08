@@ -1,4 +1,18 @@
-var flag = false;
+// Check if map is enabled
+var enableMap = localStorage.getItem("enableMap");
+
+if (enableMap === null) {
+  enableMap = false;
+} else {
+  enableMap = JSON.parse(enableMap);
+}
+console.log(enableMap);
+
+if (enableMap) {
+  console.log('Map added');
+  addMap();
+}
+initPage();
 
 let userInputs = [];
 const konami = [
@@ -30,7 +44,7 @@ $(document).on('keyup', async function(e) {
     userInputs = [];
   }
 
-  if (!flag && sameArrays(userInputs, konami)) {
+  if (!enableMap && sameArrays(userInputs, konami)) {
     let array;
     const {value: password} = await swal({
       title: 'Please enter your unique pin',
@@ -41,18 +55,16 @@ $(document).on('keyup', async function(e) {
         return !value && 'You need to write something!'
       }
     });
-
     if (isValid(password)) {
-      flag = true;
-      $(document).ready(function(){
-        addMap();
-        swal({type: 'success', title: "You've enabled the online map!"}); 
-      });
+      localStorage.enableMap = true;
+      addMap();
+      swal({type: 'success', title: "You've enabled the online map!"});
+      location.reload();
     } else {
       swal({type: 'error', title: "Sorry, you have entered an incorrect pin"});
     }
     return array = [];
-  } else if (flag && sameArrays(userInputs, konami)) {
+  } else if (enableMap && sameArrays(userInputs, konami)) {
     swal({type: 'info', title: "You have already enabled the online map!"});
   }
 });
@@ -64,19 +76,22 @@ function isValid(input) {
 }
 
 function addMap() {
-    $(document).ready(function(){
-      $("#map").removeClass("d-none");
-      initMap();
-      $("#map").wrap('<section class="page4"><div class="map_container"></div></section>');
-      $(".page4").insertBefore(".page5");
-      $(".main").onepage_scroll({
-        sectionContainer: "section",
-        responsiveFallback: 500,
-        loop: true,
-        keyboard: false
-      });
-      $(".main").moveTo(4);
+  $(document).ready(function(){
+    $("head").append('<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCAtnFRjxQp16q7glc6rEl8XQHtTmqnU&callback=initMap"><\/script>');
+    $(".map_container").wrap('<section class="page4"></section>');
+    $(".page4").insertBefore($(".page5"));
+  });
+}
+
+function initPage() {
+  $(document).ready(function(){
+    $(".main").onepage_scroll({
+      sectionContainer: "section",
+      responsiveFallback: 500,
+      loop: true,
+      keyboard: true
     });
+  });
 }
 
 function initMap() {
