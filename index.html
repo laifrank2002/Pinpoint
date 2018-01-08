@@ -28,7 +28,6 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="js/jquery.onepage-scroll.min.js"></script>
 
-  <script src="js/konami.js"></script>
 
   <!-- 3D Effect -->
   <link href="css/perspectiveRules.css" rel="stylesheet" />
@@ -36,6 +35,11 @@
 
   <!-- SweetAlert -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.9/sweetalert2.all.min.js"></script>
+
+  <!-- Google Maps -->
+  <!-- API Key: AIzaSyCjCAtnFRjxQp16q7glc6rEl8XQHtTmqnU -->
+  <script src="js/map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCAtnFRjxQp16q7glc6rEl8XQHtTmqnU&callback=initMap"></script>
 
 
 	<script>
@@ -51,7 +55,7 @@
         effectWeight: 1,
         outerBuffer: 1.08,
         elementDepth: 200,
-        perspectiveMulti: 0.5,
+        perspectiveMulti: 0.65,
         enableSmoothing: true
         };
       $("#distort").logosDistort(options);
@@ -67,18 +71,18 @@
           <div class="page_container">
             <div class="container">
               <div class="row">
-                <div class="text_container animated fadeInLeft col-sm-8">
+                <div class="text_container animated fadeInLeft px-5 col-sm-8 text-center">
                   <h1 class="display-3 text-center mb-3">Pinpoint Apparel</h1>
-                  <h3 class="text-center">Pinpoint Apparel is an all new apparel company that is helping Torontonian youth discover their city's hidden gems.</h3>
+                  <!-- <img class="img-fluid" src="img/logo.png" alt="Pinpoint Apparel"> -->
+                  <h3>Pinpoint Apparel is an all new apparel company that is helping Torontonian youth discover their city's hidden gems.</h3>
                 </div>
-                <div class="marker animated slideInDown col-sm-4 my-auto">
+                <div class="marker animated slideInDown col-sm-4 my-auto d-none d-sm-block">
                   <i class="fas fa-map-marker-alt fa-10x ml-5"></i>
                   <div class="marker_ring"></div>
                 </div>
               </div>
             </div>
           </div>
-        
       </section>
 	    
 	    <section class="page2">
@@ -94,10 +98,12 @@
           <h2>We can include an example of a scenic location as the background here (this is a terrible example)</h2>
   	    </div>
       </section>
+
+      <div id="map" class="d-none"><div>
     </div>
   </div>
+</body>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-</body>
 </html>
