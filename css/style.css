@@ -93,3 +93,28 @@ a {text-decoration: none;}
   height: 100%;
   width: auto;
 }
+/*Section 4*/
+
+/*Section 5*/
+.main section .page5 {
+	
+}
+
+/*Section 6*/
+.main section .page6 {
+	position : relative;
+	top: 0%;
+	height: 70%;
+}
+.page6 p {
+	font-size : 2em;
+}
+.main section .footer_container{
+	color:white;
+	background-color :#aa1970;
+	position : relative;
+	top : 70%;
+	height: 30%;
+	width: auto;
+	text-align: center;
+}

@@ -56,9 +56,7 @@ $(document).on('keyup', async function(e) {
     if (isValid(password)) {
       localStorage.enableMap = true;
       swal({type: 'success', title: "You've enabled the online map!", text: "The page will now reload."}).then((result) => {
-        //location.reload();
-		addMap();
-		initPage();
+        location.reload();
       });
     } else {
       swal({type: 'error', title: "Sorry, you have entered an invalid pin"});
