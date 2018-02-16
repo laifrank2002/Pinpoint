@@ -83,13 +83,15 @@ a {text-decoration: none;}
   background-size: cover;
 }
 
-.main section .map_container {
-  height: 100%;
-  margin: 0;
-  padding: 5em;
-}
 
+/*Map*/
 #map {
   height: 100%;
   width: auto;
+}
+#map_sidebar {
+  background-color: rgb(200, 50, 190);
+}
+.main section .map_container {
+  height: 100%;
 }
