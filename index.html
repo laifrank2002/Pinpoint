@@ -36,18 +36,15 @@
 	<!-- SweetAlert -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.9/sweetalert2.all.min.js"></script>
 
-	<!-- Horizontal Slides -->
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css" />
-	<script src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
-	<script src="js/slides.js"></script>
-
+	<!-- Slick -->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
 	<!-- Google Maps -->
-	<!-- API Key: AIzaSyCjCAtnFRjxQp16q7glc6rEl8XQHtTmqnU -->
 	<script src="js/map.js"></script>
 
-
 	<script>
+		// Load 3D effect
 		$(document).ready(function() {
 			var options = {
 				effectWeight: 1,
@@ -96,8 +93,12 @@
 			<!-- Partners -->
 			<section class="page3">
 				<div class="page_container">
-					<h1>Scenic Stuff here</h1>
-					<h2>We can include an example of a scenic location as the background here (this is a terrible example)</h2>
+					<h1>Our partners</h1>
+					<div id="partners_slides">
+						<div><h4 class="partner_slide text-center">Partner 1</h4></div>
+						<div><h4 class="partner_slide text-center">Partner 1</h4></div>
+						<div><h4 class="partner_slide text-center">Partner 1</h4></div>
+					</div>
 				</div>
 			</section>
 
@@ -135,7 +136,12 @@
 
 		</div>
 	</div>
+
+	<!-- Horizontal Slides -->
+	<script src="slick/slick.min.js"></script>
+	<script src="js/slides.js"></script>
 </body>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>

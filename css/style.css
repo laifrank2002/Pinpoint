@@ -15,7 +15,7 @@ a {text-decoration: none;}
 
 .wrapper {
  height: 100% !important;
- margin: 0 auto; 
+ margin: 0 auto;
  overflow: hidden;
 }
 
@@ -61,7 +61,7 @@ a {text-decoration: none;}
   left: 82px;
   top: 150px;
   -webkit-animation: pulsate 1.5s ease-out;
-  -webkit-animation-iteration-count: infinite; 
+  -webkit-animation-iteration-count: infinite;
   opacity: 0.0
 }
 @-webkit-keyframes pulsate {
@@ -75,12 +75,16 @@ a {text-decoration: none;}
 
 /*Section 3*/
 .main section.page3 {
-  color: white;
+  color: black;
+  background-color: rgb(52, 152, 219);
   height: 100%;
-  background-image: url("bg/scenic.jpg") !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.partner_slide {
+  padding: 5em 0;
 }
 
 
