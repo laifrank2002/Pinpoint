@@ -36,18 +36,15 @@
 	<!-- SweetAlert -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.9/sweetalert2.all.min.js"></script>
 
-	<!-- Horizontal Slides -->
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css" />
-	<script src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
-	<script src="js/slides.js"></script>
-
+	<!-- Slick -->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
 	<!-- Google Maps -->
-	<!-- API Key: AIzaSyCjCAtnFRjxQp16q7glc6rEl8XQHtTmqnU -->
 	<script src="js/map.js"></script>
 
-
 	<script>
+		// Load 3D effect
 		$(document).ready(function() {
 			var options = {
 				effectWeight: 1,
@@ -88,16 +85,44 @@
 			<!-- Mission Statement + Introduction/Product description -->
 			<section class="page2">
 				<div class="page_container">
-					<h1>Food stuff here</h1>
-					<h2>Blah Blah Blah</h2>
+					<div id="intro_slides">
+						<div>
+							<h1 class="display-3 partner_slide text-center mb-3">What is Pinpoint Apparel?</h4>
+							<h2>
+								Pinpoint Apparel is a youth-run social enterprise under the Junior Achievement Company Program, 
+								aiming to empower small businesses and the local economy.
+							</h2>
+						</div>
+						
+						<div>
+							<h1 class="display-3 partner_slide text-center mb-3">Our Mission</h4>
+							<h2>
+								Our mission is to bring attention to emerging unique locations around Toronto with one of a kind apparel. 
+								By empowering small businesses and helping them find exposure, we encourage Torontonians to seek out 
+								new adventures in the city. This discovery of new aspects of Toronto will not only highlight our 
+								highly praised cultural diversity, but also the warm, welcoming side of the city.
+							</h2>
+						</div>
+						
+						<div>
+							<h1 class="display-3 partner_slide text-center mb-3">Our Apparel</h4>
+							<h2>
+								blurb on our sweaters
+							</h2>
+						</div>
+					</div>
 				</div>
 			</section>
 
 			<!-- Partners -->
 			<section class="page3">
 				<div class="page_container">
-					<h1>Scenic Stuff here</h1>
-					<h2>We can include an example of a scenic location as the background here (this is a terrible example)</h2>
+					<h1>Our partners</h1>
+					<div id="partners_slides">
+						<div><h4 class="partner_slide text-center">Partner 1</h4></div>
+						<div><h4 class="partner_slide text-center">Partner 1</h4></div>
+						<div><h4 class="partner_slide text-center">Partner 1</h4></div>
+					</div>
 				</div>
 			</section>
 
@@ -135,7 +160,12 @@
 
 		</div>
 	</div>
+
+	<!-- Horizontal Slides -->
+	<script src="slick/slick.min.js"></script>
+	<script src="js/slides.js"></script>
 </body>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
