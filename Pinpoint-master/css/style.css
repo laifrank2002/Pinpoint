@@ -1,0 +1,131 @@
+html {
+  height: 100%;
+}
+body {
+  background: #E2E4E7;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {text-decoration: none;}
+
+.wrapper {
+ height: 100% !important;
+ margin: 0 auto; 
+ overflow: hidden;
+}
+
+.main {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main section .page_container {
+  position: relative;
+  top: 25%;
+  margin: 0 auto 0;
+  max-width: 950px;
+  z-index: 3;
+}
+.main section  {
+  overflow: hidden;
+}
+
+.main section > img {
+  position: absolute;
+  max-width: 100%;
+  z-index: 1;
+}
+
+/*Section 1*/
+.main section.page1 {
+  color: white;
+}
+.main section.page1 .marker {
+  color: #FE7569;
+}
+
+.marker_ring {
+  z-index: -1;
+  border: 3px solid #999;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  height: 20px;
+  width: 80px;
+  position: absolute;
+  left: 82px;
+  top: 150px;
+  -webkit-animation: pulsate 1.5s ease-out;
+  -webkit-animation-iteration-count: infinite; 
+  opacity: 0.0
+}
+@-webkit-keyframes pulsate {
+  0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(1.4, 1.4); opacity: 0.0;}
+}
+
+/*Section 2*/
+
+
+/*Section 3*/
+.main section.page3 {
+  color: white;
+  height: 100%;
+  background-image: url("bg/scenic.jpg") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main section .map_container {
+  height: 100%;
+  margin: 0;
+  padding: 5em;
+}
+
+#map {
+  height: 100%;
+  width: auto;
+}
+/*Section 4*/
+
+/*Section 5*/
+.main section .page5 {
+	
+}
+
+/*Section 6*/
+.main section .page6 {
+	position : relative;
+	top: 0%;
+	height: 70%;
+}
+.page6 p {
+	font-size : 2em;
+}
+/*Section 7*/
+.page7 p {
+	font-size : 2em;
+}
+.page7 input{
+	width : 100%;
+	padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+	font-size : 2em;
+}
+.main section .footer_container{
+	color:white;
+	background-color :#aa1970;
+	position : relative;
+	top : 50%;
+	height: 30%;
+	width: auto;
+	text-align: center;
+}
