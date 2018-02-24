@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-  $('#partners_slides').slick({
+  $('#intro_slides').slick({
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 1000,
     dots: true,
   });
 
