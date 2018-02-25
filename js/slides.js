@@ -2,8 +2,8 @@ $(document).ready(function() {
 
   $('#intro_slides').slick({
     autoplay: true,
-    autoplaySpeed: 1000,
-    dots: true,
+    autoplaySpeed: 3000,
+    dots: false,
   });
 
   $('#exec_slides').slick({

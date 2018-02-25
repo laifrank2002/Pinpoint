@@ -29,7 +29,7 @@ a {
 }
 
 .main section .page_container {
-  top: 10%;
+  top: 5%;
   position: relative;
   margin: 0 auto 0;
   max-width: 950px;
@@ -40,7 +40,7 @@ a {
   overflow: hidden;
 }
 
-.main section>img {
+.main section img {
   position: absolute;
   max-width: 100%;
   z-index: 1;
@@ -53,7 +53,6 @@ a {
 
 .main section.page1 .page_container {
   top: 25%;
-
 }
 
 .main section.page1 .marker {
@@ -92,15 +91,13 @@ a {
 /*Section 2*/
 .main section.page2 {
   color: white;
-  background-color: rgb(52, 152, 219);
   height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+}
+
+.partner_slide {
 }
 
 /*Section 3*/
-
 .main section.page3 {
   color: black;
   background-color: rgb(52, 152, 219);
@@ -110,9 +107,6 @@ a {
   background-size: cover;
 }
 
-.partner_slide {
-  padding: 5em 0;
-}
 
 /*Section 5*/
 .main section.page5 {
@@ -129,11 +123,10 @@ a {
 
 
 .intro_slides {
-  padding: 5em 0;
+  padding: 0 0;
 }
 
 /*Map*/
-
 #map {
   height: 100%;
   width: auto;
