@@ -1,134 +1,67 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Pinpoint Adventures</title>
 	<meta name="title" content="Pinpoint Adventures | A JA Company" />
 	<meta name="description" content="Pinpoint Adventures is a.........." />
-  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
 	<meta content="" property="og:url" />
 	<meta content="" property="og:image" />
-	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
+	<link rel="shortcut icon" id="favicon" href="favicon.png">
 	<meta name="author" content="Pinpoint Adventures IT Dept">
 
-  <!-- Animation -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+	<!-- Animation -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
 
-  <!-- Styles -->
-  <link href='css/onepage-scroll.css' rel='stylesheet'>
-  <link href='css/style.css' rel='stylesheet'>
+	<!-- Styles -->
+	<link href='css/onepage-scroll.css' rel='stylesheet'>
+	<link href='css/style.css' rel='stylesheet'>
 
-  <!-- Font Awesome -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 
-  <!-- Bootstrap core -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<!-- Bootstrap core -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="js/jquery.onepage-scroll.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="js/jquery.onepage-scroll.min.js"></script>
 
+	<!-- 3D Effect -->
+	<link href="css/perspectiveRules.css" rel="stylesheet" />
+	<script src="js/jquery.logosDistort.min.js"></script>
 
-  <!-- 3D Effect -->
-  <link href="css/perspectiveRules.css" rel="stylesheet" />
-  <script src="js/jquery.logosDistort.min.js"></script>
+	<!-- SweetAlert -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.9/sweetalert2.all.min.js"></script>
 
-  <!-- SweetAlert -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.9/sweetalert2.all.min.js"></script>
+	<!-- Slick -->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
-  <!-- Google Maps -->
-  <!-- API Key: AIzaSyCjCAtnFRjxQp16q7glc6rEl8XQHtTmqnU -->
-  <script src="js/map.js"></script>
-
+	<!-- Google Maps -->
+	<script src="js/map.js"></script>
 
 	<script>
-    $(document).ready(function(){
-      var options = {
-        effectWeight: 1,
-        outerBuffer: 1.08,
-        elementDepth: 200,
-        perspectiveMulti: 0.65,
-        enableSmoothing: true
-        };
-      $("#distort").logosDistort(options);
-    });
+		// Load 3D effect
+		$(document).ready(function() {
+			var options = {
+				effectWeight: 1,
+				outerBuffer: 1.08,
+				elementDepth: 200,
+				perspectiveMulti: 0.65,
+				enableSmoothing: true
+			};
+			$("#distort").logosDistort(options);
+		});
 	</script>
 </head>
+
 <body>
-  <div class="wrapper">
-	  <div class="main">
-
-      <section id="distort" class="page1">
-        <img src="img/toronto_blur.jpg">
-          <div class="page_container">
-            <div class="container">
-              <div class="row">
-                <div class="text_container animated fadeInLeft px-5 col-sm-8 text-center">
-                  <h1 class="display-3 text-center mb-3">Pinpoint Apparel</h1>
-                  <!-- <img class="img-fluid" src="img/logo.png" alt="Pinpoint Apparel"> -->
-                  <h3>Pinpoint Apparel is an all new apparel company that is helping Torontonian youth discover their city's hidden gems.</h3>
-                </div>
-                <div class="marker animated slideInDown col-sm-4 my-auto d-none d-sm-block">
-                  <i class="fas fa-map-marker-alt fa-10x ml-5"></i>
-                  <div class="marker_ring"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
-	    
-	    <section class="page2">
-	      <div class="page_container">
-          <h1>Food stuff here</h1>
-          <h2>Blah Blah Blah</h2>
-	      </div>
-      </section>
-	    
-	    <section class="page3">
-	      <div class="page_container">
-          <h1>Scenic Stuff here</h1>
-          <h2>We can include an example of a scenic location as the background here (this is a terrible example)</h2>
-  	    </div>
-      </section>
-
-      <section class="page5">
-        <div class="page_container">
-          <h1>Pinpoint Apparel Team</h1>
-          <h2>Pinpoint Apparel was founded and staffed by students. </h2>
-        </div>
-      </section>
-	  
-	  <section class="page6">
-		<div class="page_container">
-			<h1>Frequently Asked Questions</h1>
-			<h2>What is the purpose of pinpoint shirts?</h2>
-			<p>Our shirts are designed for adventure minded folk who want to explore Toronto. Of course, they also look nice, and you can just buy them as a shirt.</p>
-			<h2>Speaking of buying, can I order your shirts online?</h2>
-			<p>Unfortunately, we are a JA company that is only doing limited runs of our product. Delivery is just unaffordable for us. However, you can buy them in store at the RBC Grangeway.</p>
-			<h2>What does JA stand for?</h2>
-			<p>I'm glad you asked! JA stands for Junior Achievement. They help young entrepeurneurs like us in starting their own business. This is <a href="">JA Canada</a>. </p>
-		</div>
-	  </section>
-	  <section class="page7">
-		<div class="page_container">
-			<p>Before you go, for the latest updates on Pinpoint Apparel, enter your email here.</p>
-			<form action="/submitEmail.php">
-				<input type="text" name="Email" value="example@email.com">
-			</form>
-		</div>
-		<div class="footer_container">
-			<h1>Pinpoint Apparel</h1>
-			<p>&copy; 2018 - All rights reserved</p>
-		</div>
-	  </section>
-      <div class="map_container">
-        <div id="map"></div>
-      </div>
-
-    </div>
-  </div>
 </body>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
 </html>

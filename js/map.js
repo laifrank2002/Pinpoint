@@ -8,27 +8,27 @@ if (enableMap === null) {
 }
 
 if (enableMap) {
-  addMap();
+  // addMap();
 }
 initPage();
 
 let userInputs = [];
 const konami = [
   38, 38, // ↑ ↑
-  40, 40, // ↓ ↓ 
-  37, 39, // ← → 
-  37, 39, // ← → 
+  40, 40, // ↓ ↓
+  37, 39, // ← →
+  37, 39, // ← →
   66, 65, // B A
   ];
- 
+
 const sameArrays = function(a, b) {
   if (a.length !== b.length) { return false; }
- 
+
   for (let index = 0; index < a.length; index++) {
     const value = a[index];
     if (value !== b[index]) { return false; }
   }
- 
+
   return true;
 };
 
